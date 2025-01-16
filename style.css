@@ -52,10 +52,7 @@ section::after {
     box-shadow: 0 25 45px rgba(0, 0, 0, 0.25);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
-.front-face header {
 
-
-}
 .front-face .logo {
     display: flex;
     align-items: center;
@@ -80,12 +77,14 @@ font-weight: 400;
 
 .front-face .chip {
     width: 48px;
-    align-items: right;
+    align-items: center;
+    transform: translate(275px, 30px);
 }
 .front-face .chip img {
     width: 100%;
     align-items: end;
 }
+
 
 .front-face .card-details {
     display: flex;
@@ -109,15 +108,42 @@ h5.name {
     letter-spacing: 0.5px;
 }
 
+.card.back-face {
+    border: none;
+    padding: 15px 25px 25px 25px;    
+}
 
+.card.back-face h6 {
+    font-size: 15px;
+}
 
+.card.back-face .magnetic-strip {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    height: 45px;
+    width: 100%;
+    background: #000;
+}
 
+.card.back-face .signature {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 80px;
+    height: 40px;
+    width: 85%;border-radius: 6px;
+    background-color: #fff;
+}
 
-
-
-
-
-
+.signature i {
+    color: #000;
+    font-size: 12px;
+    padding: 4px 6px;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-right: -30;
+}
 
 
 
